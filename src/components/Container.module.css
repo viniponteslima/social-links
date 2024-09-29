@@ -1,0 +1,12 @@
+.container {
+  margin: 4rem auto;
+  border-radius: 1rem;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 36rem;
+  width: 90%;
+}
