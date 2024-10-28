@@ -1,5 +1,4 @@
 import styles from './UserCard.module.css';
-import image from '../images/user.png'
 import data from '../data/user.json'
 import { useEffect, useState } from 'react';
 
@@ -14,7 +13,7 @@ export default function UserCard() {
   
   return (
     <header className={styles.userCard}>
-      <img src={image} alt='User' />
+      <img src={user.image && user.image} alt='User' />
       {user.name && ( <h1>{user.name}</h1> )}
       {user.carrer && ( <h2>{user.carrer}</h2> )}
       {user.about && ( <p>{user.about}</p> )}

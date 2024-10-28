@@ -13,6 +13,9 @@
 
 .userCard img {
   width: 8rem;
+  height: 8rem;
+  background-color: #222;
+  color: transparent;
   border-radius: 100%;
 }
 
