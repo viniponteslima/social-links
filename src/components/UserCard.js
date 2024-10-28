@@ -1,12 +1,17 @@
 import styles from './UserCard.module.css';
 import image from '../images/user.png'
+import data from '../data/user.json'
+import { useEffect, useState } from 'react';
 
 export default function UserCard() {
-  const user = {
-    name: 'Vinícius Pontes Lima',
-    carrer: 'Front-End Developer',
-  }
 
+  const [user, setUser] = useState({})
+
+  useEffect(() => {
+    setUser(data.user)
+  },[])
+
+  
   return (
     <header className={styles.userCard}>
       <img src={image} alt='User' />
